@@ -1,0 +1,106 @@
+/* Common styles for elements */
+img {
+    height: auto;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh; /* Increase the height as desired */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow-y: auto;
+}
+@media (max-width: 426px) {
+    .sidebar {
+        width: 30%; /* Decrease the width on smaller screens */
+    }
+}
+
+/* Container (cards) styles */
+.container {
+    background-color: #fff;
+    /* width: 100%; */
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    margin: 20px;
+    padding: 20px;
+    /* transition: transform 0.2s; */
+    margin-left: 30px;
+    /* background-color: chocolate; */
+}
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Main container styles */
+.main-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    padding: 20px;
+    background-color: crimson;
+}
+
+/* Additional styles */
+.cover {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    /* background-color: blue; */
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-left: 250px;
+}
+
+.graphs-container {
+    display: flex;
+    padding-left: 50px;
+}
+
+.right-corner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.search-bar-input {
+    margin-left: 200px;
+}
+
+/* Container-1 styles */
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+
+    .dashboard {
+        margin-left: 30%; /* Remove the left margin on smaller screens */
+    }
+
+    .search-bar-input {
+        margin-left: 0; /* Remove the left margin on smaller screens */
+    }
+}
+
+/* Add more media queries and styles as needed for other screen sizes */

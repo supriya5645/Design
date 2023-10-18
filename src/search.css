@@ -1,0 +1,39 @@
+/* search.css */
+.search-bar {
+    display: flex;
+    justify-content: end;
+    width: 650px; /* Adjust the width as needed */
+  }
+
+  
+  
+  .search-input-container {
+   
+    background: #fff; /* Background color for the input box */
+    border: 1px solid #ccc; /* Add any desired border styles */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    padding: 5px;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    width: 200px;
+  }
+  
+  .icon {
+    color: #555; /* Change the icon color as needed */
+  }
+
+
+  @media (max-width: 769px) {
+    .search-bar {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        width: 131px;
+    }
+    .input {
+      width: 100px;
+    }
+
+}
+  
